@@ -42,3 +42,25 @@ b = 20
 
 a,b = b,a
 print("After swapping: a =", a, "b =", b)
+
+
+# problem : 6
+print('How do you concatenate two strings in Python?')
+
+string1 = "Hello, "
+string2 = "world!" 
+concatenated_string = string1 + string2
+print(concatenated_string)
+
+
+# problem : 7
+print("How do you find the length of a string in Python?")
+string = "Hello, World!"
+length = len(string)
+print("The length of the string is:", length)
+
+#problem : 8
+print("How do you convert a string to uppercase in Python?")
+string = "Hello, World!"
+uppercase_string = string.upper()
+print("The uppercase version of the string is:", uppercase_string)
