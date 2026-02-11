@@ -64,3 +64,56 @@ print("How do you convert a string to uppercase in Python?")
 string = "Hello, World!"
 uppercase_string = string.upper()
 print("The uppercase version of the string is:", uppercase_string)
+
+#problem : 9
+
+print("Write a Python program to reverse a string.")
+
+s = input("Enter a string: ")
+print(s[::-1])
+
+#problem : 10
+print("Write a Python program to check if a string is a palindrome.")
+s = input("Enter a string: ")
+if s == s[::-1]:
+    print("The string is a palindrome.")
+else:
+    print("The string is not a palindrome.")
+
+
+# problem : 11
+print('Find Largest Number in a List')
+numbers = [10, 25, 3, 45, 50, 12]
+largest = numbers[0]
+for num in numbers:
+    if num > largest:
+        largest = num
+print("The largest number is:", largest)
+
+# problem : 12
+print("Fibonacci Series")
+n = int(input("Enter the number of terms: "))
+a, b = 0, 1     
+count = 0
+if n <= 0:  
+    print("Please enter a positive integer.")
+elif n == 1:
+    print("Fibonacci sequence up to", n, ":")
+    print(a)
+
+
+# problem : 13
+print("Check Prime Number")
+num = int(input("Enter a number: "))
+is_prime = True
+if num > 1:
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+else:
+    is_prime = False
+if is_prime:
+    print(num, "is a prime number.")
+else:
+    print(num, "is not a prime number.")
